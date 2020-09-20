@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="sign.css">
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+  https://firebase.google.com/docs/web/setup#available-libraries -->
+  <!-- <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-analytics.js"></script> -->
+  
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyC7P029dYswYoe3_yA63Yz0aND1NU040tk",
+    authDomain: "chatapp-123-fir.firebaseapp.com",
+    databaseURL: "https://chatapp-123-fir.firebaseio.com",
+    projectId: "chatapp-123-fir",
+    storageBucket: "chatapp-123-fir.appspot.com",
+    messagingSenderId: "675874285852",
+    appId: "1:675874285852:web:65937638b351e71e2df2d9",
+    measurementId: "G-K7HEYWG4LH"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  // firebase.analytics();
+</script>
+</head>
+<body>
+  <div class="container-fluid" style=" display: flex;  align-items: center; height: 450px; justify-content: center;  width: 830px; margin-top: 100px; flex-direction: row;">
+    <a href="./index.html">  <h2 style=" text-decoration: none; font-family: 'Times New Roman', Times, serif; font-size: 50px; color: white;  width: 150px;">Sign in</h2></a>   
+  <div class="container">
+     
+    <h2 style="font-family: 'Times New Roman', Times, serif; font-size: 60px;">Create your account </h2>
+  <form style="  width: 500px; margin-bottom: 20px; margin-top: 30px;">
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input style="border: 1px solid whitesmoke;" type="text" required class="form-control" id="firstName" placeholder="First name"  autocomplete="cc-given-name" >
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input style="border: 1px solid whitesmoke;" type="text" required class="form-control" id="lastName" placeholder="Last name"  autocomplete="cc-additional-name" >
+    </div>
+      <div class="form-group ">
+        <label for="inputEmail4">Email</label>
+        <input type="email" style="border: 1px solid whitesmoke;"  autocomplete="email"  required class="form-control" id="inputEmail4" placeholder="Email">
+      </div>
+      <div class="form-group ">
+        <label for="inputPassword4">Password</label>
+        <input type="password"  autocomplete="current-password"  style="border: 1px solid whitesmoke;" required class="form-control" id="inputPassword4" placeholder="Password">
+      </div>
+    
+    
+    <!-- <div class="form-group">
+      <label for="inputAddress2">Address 2</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    </div> -->
+    <!-- <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCity">City</label>
+        <input type="text" required class="form-control" id="inputCity">
+      </div> -->
+    
+    <button type="button" onclick="signUp()" style="color: white; background-color: #ff73b2;" class="btn">Sign up</button><br><br>
+   
+  </form>
+  
+</div>
+
+
+</div>
+<script src="./auth.js"></script>
+
+</body>
+</html>

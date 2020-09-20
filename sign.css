@@ -1,0 +1,20 @@
+body{
+    background-color: #5256ad;
+}
+.container{
+    /* border: 2px solid black; */
+    /* margin-top: 8px; */
+    width: 530px;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 2px 1px 3px 3px whitesmoke;
+    background-color: whitesmoke;
+    
+    /* margin-bottom: 20px; */
+}
+.container-fluid{
+    /* box-shadow: 5px 4px 2px 4px  whitesmoke; */
+    /* border: 1px solid whitesmoke; */
+    background-color: #999ede;
+
+}

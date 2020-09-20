@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="style.css">
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyC7P029dYswYoe3_yA63Yz0aND1NU040tk",
+    authDomain: "chatapp-123-fir.firebaseapp.com",
+    databaseURL: "https://chatapp-123-fir.firebaseio.com",
+    projectId: "chatapp-123-fir",
+    storageBucket: "chatapp-123-fir.appspot.com",
+    messagingSenderId: "675874285852",
+    appId: "1:675874285852:web:65937638b351e71e2df2d9",
+    measurementId: "G-K7HEYWG4LH"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  // firebase.analytics();
+</script>
+<script src="./screen.js"></script>
+</head>
+<body>
+  
+  <div style="text-decoration: none;" class="container">
+    <!-- <div style="border: 1px solid black; margin-bottom: 10px; text-align: center;  background-color: #009688; "> -->
+      <h1 style="text-align: center;  "><i class="fa fa-comments" aria-hidden="true"></i> Chat App</h1>
+    <!-- </div>  -->
+      <div class="wrap" style="background-color: #eeeeee;">
+        <button onclick="signOut()" style="background-color: #fff; color: black; border-radius: 10px; border: 1px solid white;margin-top: 10px; margin-left: 390px;"><i class="fa fa-sign-out i2" aria-hidden="true"></i>signout</button>
+          
+          <h4 id="userName" >Loading ...</h4>
+          <div style="overflow-y: scroll; background-color: #e3dbd8; height: 510px;border: 1px solid black;" >
+            <ul id="list">
+             
+              
+            </ul>
+            
+          </div>
+          <div class="add-form"  style="background-color: #ebe9e7;">
+            <input type="text" placeholder="Text your msg" id="todo-item">
+            <button class="btn1" onclick="sendMessage()"> <i  class="fa fa-paper-plane-o icon" aria-hidden="true"></i></button>
+            <!-- <button class="btn1" onclick="deleteAll()">Delete all</button> -->
+        </div>
+            
+
+      </div>
+  </div>
+</body>
+</html>
